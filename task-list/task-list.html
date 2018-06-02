@@ -1,0 +1,4 @@
+
+<ol>
+  <li ng-repeat="item in $ctrl.list | filter: $ctrl.search track by $index">{{item}} <i id="delete" class="material-icons" ng-click="$ctrl.removeItem($index)">close</i> </li>
+</ol>

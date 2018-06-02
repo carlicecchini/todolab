@@ -1,0 +1,12 @@
+<form class="form">
+  <div>
+    <a class= "goback" href="/"><i id="backarrow" class="material-icons">arrow_back</i>Go Back</a>
+  </div>
+  <h1>TODO List</h1>
+  <h2>A place to store the things you have to do!</h2>
+
+  <input ng-model="$ctrl.search" type="text" placeholder="Filter your to-dos">
+<task-list list="$ctrl.listItems" search="$ctrl.search"></task-list>
+  <input ng-model='$ctrl.newDo' type='text' placeholder="Add your to-do" ng-keydown='$ctrl.onKeyDown($event)'><br>
+  <button type="button" ng-click="$ctrl.newItem();">Add</button>
+</form>
